@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#faf8f1">
+  <meta name="description" content="An educational guide to understanding appliance energy use in Australian homes. Explore seven questions about television technologies, sizes, brands and energy use with graphs from KNIME.">
+  <title>Home | Powerwise</title>
+  <link rel="icon" href="public/PowerIcon.png" type="image/png">
+  <link rel="stylesheet" href="styles.css">
+  <!-- Render page content first, then initialise shared navigation. -->
+  <script src="home.js" defer></script>
+  <script src="televisions.js" defer></script>
+  <script src="about.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <svg class="icon-definitions" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <symbol id="icon-arrow" viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></symbol>
+    <symbol id="icon-tv" viewBox="0 0 32 32"><rect x="3" y="5" width="26" height="19" rx="3"/><path d="M11 28h10m-5-4v4"/></symbol>
+    <symbol id="icon-bolt" viewBox="0 0 32 32"><path d="m18 3-12 16h9l-1 10 12-16h-9z"/></symbol>
+    <symbol id="icon-home" viewBox="0 0 32 32"><path d="m3 15 13-11 13 11M7 12v16h18V12M13 28v-9h6v9"/></symbol>
+    <symbol id="icon-leaf" viewBox="0 0 32 32"><path d="M27 4C13 2 3 8 7 19s22 7 20-15ZM5 28 21 11"/></symbol>
+    <symbol id="icon-sliders" viewBox="0 0 32 32"><path d="M5 9h22M5 23h22"/><circle cx="12" cy="9" r="3"/><circle cx="21" cy="23" r="3"/></symbol>
+  </svg>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#home" aria-label="Powerwise home"><img src="public/PowerIcon.png" alt="" width="43" height="43"><span>powerwise<span class="brand-dot">.</span></span></a>
+      <nav aria-label="Main navigation">
+        <a href="#home" data-nav="home" aria-current="page">Home</a>
+        <a href="#televisions" data-nav="televisions">Televisions</a>
+        <a href="#about" data-nav="about">About Us</a>
+      </nav>
+      <span class="header-note"><span class="status-dot"></span> A little more energy aware</span>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- Each page script fills its matching container below. -->
+    <section id="home" class="page" aria-labelledby="home-heading"></section>
+
+    <section id="televisions" class="page" aria-labelledby="televisions-heading" hidden></section>
+
+    <section id="about" class="page" aria-labelledby="about-heading" hidden></section>
+    <noscript><p class="container no-script">JavaScript is required to display the page content. Please enable it in your browser.</p></noscript>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-top"><a class="brand footer-brand" href="#home" aria-label="Powerwise home"><img src="public/PowerIcon.png" alt="" width="32" height="32"><p>A little knowledge. A brighter everyday.</p><a href="#about" class="footer-about">Built with purpose <span aria-hidden="true">↗</span></a></div><div class="container footer-bottom"><p>© <span id="year">2026</span> <span id="author-name">Leroy Lau</span>. </p><p>GenAI acknowledgement: Code and content assisted by OpenAI ChatGPT.</p></div></footer>
+</body>
+</html>
