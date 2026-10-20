@@ -1,6 +1,6 @@
-// Render the Home page into its container in index.html.
+// Render the existing Home content below the permanent D3 exercise in index.html.
 (() => {
-  const page = document.querySelector('#home');
+  const page = document.querySelector('#home-content');
 
   const template = `
       <div class="container hero">
