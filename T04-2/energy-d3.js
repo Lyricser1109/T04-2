@@ -1,4 +1,6 @@
-d3.select("h1")
+//T04-2 script
+
+/*d3.select("h1")
     .style("color", "green");
 d3.select("div")
     .append("p")
@@ -11,4 +13,7 @@ d3.select("svg")
     .attr("y", 50)
     .attr("width", 100)
     .attr("height", 30)
-    .style("fill", "green");
+    .style("fill", "green");*/
+
+//T04-3 script
+

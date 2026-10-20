@@ -8,6 +8,7 @@
   <title>Home | Powerwise</title>
   <link rel="icon" href="public/PowerIcon.png" type="image/png">
   <link rel="stylesheet" href="styles.css">
+  <script src="icons.js" defer></script>
   <!-- Render page content first, then initialise shared navigation. -->
   <script src="home.js" defer></script>
   <script src="televisions.js" defer></script>
@@ -15,6 +16,7 @@
   <script src="script.js" defer></script>
   <!-- Run the exercise after the page content is ready. -->
   <script src="https://d3js.org/d3.v7.min.js" defer></script>
+  <script src="t04-3-bar.js" defer></script>
   <script src="energy-d3.js" defer></script>
 </head>
 <body>
@@ -36,10 +38,11 @@
     <section id="home" class="page" aria-labelledby="home-heading">
       <!-- Plain HTML for the exercise: the first h1, div and svg on the page. -->
       <h1>Appliance Energy Consumption</h1>
-      <div></div>
-      <svg witdth = "300" height = "150"></svg>
+      <svg width = "300" height = "150"></svg>
 
-      <!-- home.js fills only this container, preserving the exercise above. -->
+      <div class = "responsive-svg-container"></div>
+
+      <!-- home.js fills only this container, preserving the exercise above. --> 
       <div id="home-content"></div>
     </section>
 
@@ -48,16 +51,6 @@
     <section id="about" class="page" aria-labelledby="about-heading" hidden></section>
     <noscript><p class="container no-script">JavaScript is required to display the page content. Please enable it in your browser.</p></noscript>
   </main>
-
-  <!-- Define icons after the exercise so d3.select("svg") reaches its canvas. -->
-  <svg class="icon-definitions" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-    <symbol id="icon-arrow" viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></symbol>
-    <symbol id="icon-tv" viewBox="0 0 32 32"><rect x="3" y="5" width="26" height="19" rx="3"/><path d="M11 28h10m-5-4v4"/></symbol>
-    <symbol id="icon-bolt" viewBox="0 0 32 32"><path d="m18 3-12 16h9l-1 10 12-16h-9z"/></symbol>
-    <symbol id="icon-home" viewBox="0 0 32 32"><path d="m3 15 13-11 13 11M7 12v16h18V12M13 28v-9h6v9"/></symbol>
-    <symbol id="icon-leaf" viewBox="0 0 32 32"><path d="M27 4C13 2 3 8 7 19s22 7 20-15ZM5 28 21 11"/></symbol>
-    <symbol id="icon-sliders" viewBox="0 0 32 32"><path d="M5 9h22M5 23h22"/><circle cx="12" cy="9" r="3"/><circle cx="21" cy="23" r="3"/></symbol>
-  </svg>
 
   <footer class="site-footer"><div class="container footer-top"><a class="brand footer-brand" href="#home" aria-label="Powerwise home"><img src="public/PowerIcon.png" alt="" width="32" height="32"><p>A little knowledge. A brighter everyday.</p><a href="#about" class="footer-about">Built with purpose <span aria-hidden="true">↗</span></a></div><div class="container footer-bottom"><p>© <span id="year">2026</span> <span id="author-name">Leroy Lau</span>. </p><p>GenAI acknowledgement: Code and content assisted by OpenAI ChatGPT.</p></div></footer>
 </body>
